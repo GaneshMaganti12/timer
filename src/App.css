@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.timer-container {
+  background-image: url("https://img.freepik.com/free-vector/sand-running-through-bulbs-hourglass-measuring-passing-time_587448-1023.jpg?t=st=1716656743~exp=1716660343~hmac=d0bc2210f034859f065bfa2c8ef488c915f6a414513d7738cea1e031295b19d2&w=996");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position: center;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.timer-card {
+  max-width: 350px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  border-radius: 6px;
+}
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #1d1d1d;
+  font-size: 28px;
+  font-family: "Roboto";
+}
+.time {
+  margin: 0;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+  font-size: 46px;
+}
+.adjust-buttons-card {
+  margin: 10px;
+}
+.adjust-buttons-card button {
+  background-color: #ffffff;
+  margin: 0px 10px;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  font-size: 15px;
+  color: #343434;
+  box-shadow: 0 2px 4px #00000058, 0px 4px 8px #00000058;
+}
+.adjust-buttons-card button:focus {
+  outline: none;
+}
+.buttons-container {
+  margin-top: 10px;
+}
+.buttons-container button {
+  color: #fff;
+  padding: 8px 14px;
+  margin: 0px 10px;
+  font-family: "Roboto";
+  font-size: 15px;
+  border: none;
+}
+.buttons-container button:focus {
+  outline: none;
+}
+.buttons-container button:first-child {
+  margin-left: 0;
+}
+.buttons-container button:last-child {
+  margin-right: 0;
+}
+.start {
+  background-color: #26a52f;
+}
+.stop {
+  background-color: #d12e2e;
+}
+.reset {
+  background-color: #343434;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .timer-card {
+    border-radius: 8px;
+  }
+  .time {
+    font-size: 44px;
+  }
+  .adjust-buttons-card button {
+    font-size: 16px;
+    margin: 0px 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .buttons-container button {
+    font-size: 16px;
+    margin: 0px 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .timer-card {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .time {
+    font-size: 64px;
+  }
+  .adjust-buttons-card button {
+    font-size: 17px;
+    margin: 0px 14px;
+  }
+  .buttons-container button {
+    font-size: 18px;
+    margin: 0px 14px;
+    padding: 8px 18px;
+  }
+}
